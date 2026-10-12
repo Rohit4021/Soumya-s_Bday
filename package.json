@@ -1,0 +1,17 @@
+{
+  "name": "bday",
+  "version": "1.0.0",
+  "description": "Her Birthday",
+  "license": "ISC",
+  "author": "Rohit",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run start"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "hbs": "^4.3.1",
+    "http": "^0.0.1-security"
+  }
+}
