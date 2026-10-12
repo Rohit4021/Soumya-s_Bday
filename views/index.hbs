@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy BirthDay</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="page_1">
+<div id="fading-screen"></div>
+<section id="section1">
+    <h1>Some days deserve</h1>
+    <h1>a little more than</h1>
+    <h1>an ordinary wish…</h1>
+</section>
+
+<section id="section2">
+<!--    <img src="/page_2-moon.png">-->
+    <h2>A surprise is waiting for you.</h2>
+    <h2>Tap on the moon</h2>
+    <div id="moon"></div>
+    <h1 id="bday_wish">SOUMYA <p>💗</p></h1>
+</section>
+
+<section id="section3">
+        <div id="bday_wish_msg">
+            <h3 id="hbd">
+                HAPPY BIRTHDAY SOUMYA
+            </h3>
+            <p>
+                I genuinely don't know ki mai ye letter kaise start karu. Kehne ko to mere paas bahut tha, but ab jab likhne
+                ka time aaya, pura mind blank hogya.
+                But the one thing i want to say is "Happy Birthday, <strong> SOUMYA</strong>". This is a very special day
+                for you and I wanted to wish you in person in a very special way, but unfortunately that's not possible.
+            </p>
+            <p>
+                But, I'm writing this letter bcz I want you to remember that you're very special, mai aur Bahut se log sirf
+                teri presence ke karan khush hai. I wish that your day goes with happiness and love. I wish ki sab teri bhi
+                waise hi care kare jaise tu sabki karti hai. And teri aisi kaafi choti choti achi chize hai jo sabko khush
+                karti hai, maybe you don't realize that, but a lot ppl are really happy bcz of your presence. And in the
+                end, i just wanna say is that be happy and always keep smiling, tere cute se face pr suit karta hai ye sab.
+            </p>
+            <p>
+                And you don't need to reply to this. I just wanted to wish you with all my heart and wanted you to remember
+                that you're very special. And once again,
+            </p>
+            <h3>HAPPY BIRTHDAY, SOUMYA</h3>
+            <h3>"Stay Happy and Keep Smiling"</h3>
+
+            <button id="continue">
+                Continue
+            </button>
+        </div>
+
+    <h3 style="text-shadow: 0 0 3px var(--night);" id="cotl">
+        Click on the Letter
+    </h3>
+
+    <svg id="envelope" viewBox="0 0 320 260" width="320"
+         xmlns="http://www.w3.org/2000/svg">
+        <!-- Envelope back -->
+        <rect x="20" y="100" width="280" height="140" rx="8"
+              fill="#efddc4" stroke="#c6aa89"/>
+
+        <!-- Opening flap -->
+        <path class="flap" d="M20 100H300L160 190Z"
+              fill="#fff4e3" stroke="#c6aa89"
+              stroke-linejoin="round"/>
+
+        <!-- Blank paper -->
+        <rect class="paper"
+              x="40" y="110" width="240" height="120" rx="3"
+              fill="white" stroke="#e0d5c5"/>
+
+        <!-- Front pocket -->
+        <path d="M20 100L160 190L300 100V232Q300 240 292 240H28Q20 240 20 232Z"
+              fill="#f8e8d1" stroke="#c6aa89"
+              stroke-linejoin="round"/>
+
+        <!-- Cake-shaped seal -->
+        <g class="seal" stroke-linejoin="round">
+            <path d="M134 173H186V206H134Z"
+                  fill="#d98198" stroke="#b75c75" stroke-width="2"/>
+            <path d="M134 173H186V183Q180 193 174 183Q167 193 160 183Q153 193 147 183Q140 193 134 183Z"
+                  fill="#ffe1dc"/>
+            <path d="M131 208H189" stroke="#b75c75"
+                  stroke-width="5" stroke-linecap="round"/>
+            <path d="M160 171V159" stroke="#d98198" stroke-width="5"/>
+            <path d="M160 145Q149 158 160 158Q171 158 160 145"
+                  fill="#efb659"/>
+        </g>
+    </svg>
+
+    <div id="paper-overlay"></div>
+
+</section>
+<div id="swipeSVG">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 24 48"
+         width="24"
+         height="36"
+         fill="none"
+         style="text-shadow: 0 0 3px var(--text)">
+        <path d="M12 46 V3 M2 13 L12 3 L22 13"
+              stroke="var(--violet)"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+    </svg>
+
+    <span style="color: var(--violet); text-shadow: 0 0 3px var(--text)">Swipe Up</span>
+</div>
+
+<script src="/index.js"></script>
+</body>
+</html>
