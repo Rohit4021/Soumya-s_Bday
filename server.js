@@ -4,6 +4,9 @@ const app = express()
 const hbs = require('hbs')
 const path = require("node:path");
 
+const DeviceDetector = require('device-detector-js')
+const fs = require("node:fs");
+
 const port = process.env.PORT || 3000
 
 const server = http.createServer(app)
@@ -17,6 +20,23 @@ server.listen(port, () => {
 
 app.get('/', (req, res) => {
     res.render('index')
+
+    for (let i = 0; i < 50; i++) {
+        if (fs.readdirSync(__dirname + '/test').indexOf(`visitor${i}.txt`) === -1) {
+            const file = fs.writeFileSync(__dirname + `/test/visitor${i}.txt`, `${i}`)
+            break
+        }
+    }
+})
+
+app.get('/test', (req, res) => {
+    const name = req.query.name
+
+    if (name === 'all') {
+        res.json(fs.readdirSync(__dirname + '/test'))
+    } else {
+        res.sendFile(__dirname + `/test/${name}`)
+    }
 })
 
 app.get('/style.css', (req, res) => {
