@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Envelope with a cake seal</title>
+  <desc id="desc">A cream envelope with a folded flap, closed by a pink birthday cake shaped seal with a single candle. Transparent background.</desc>
+  <defs>
+    <linearGradient id="paper" x1="400" y1="140" x2="400" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9ED"/><stop offset="1" stop-color="#F5E6CF"/>
+    </linearGradient>
+    <linearGradient id="flap" x1="400" y1="142" x2="400" y2="332" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFCF5"/><stop offset="1" stop-color="#F9EBD6"/>
+    </linearGradient>
+    <linearGradient id="cake" x1="400" y1="282" x2="400" y2="382" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EE9EA8"/><stop offset="1" stop-color="#CB687E"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-20%" width="130%" height="145%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#795140" flood-opacity=".16"/>
+    </filter>
+    <filter id="sealShadow" x="-30%" y="-25%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#814657" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" stroke="#CDB69A" stroke-width="3" stroke-linejoin="round">
+    <rect x="100" y="140" width="600" height="330" rx="18" fill="url(#paper)"/>
+    <path d="M107 457 335 279Q400 233 465 279L693 457" fill="#FFF5E5"/>
+    <path d="m104 152 271 176q25 17 50 0L696 152" fill="url(#flap)"/>
+  </g>
+  <!-- The seal follows the cake and candle silhouette, rather than a circular badge. -->
+  <g filter="url(#sealShadow)" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M392 274v-19c-8-7-4-18 8-29 12 11 16 22 8 29v19h39q11 0 11 12v71h5q8 0 8 8v7q0 8-8 8H337q-8 0-8-8v-7q0-8 8-8h5v-71q0-12 11-12Z" fill="url(#cake)" stroke="#B85870" stroke-width="4"/>
+    <path d="M400 235c-6 7-9 13 0 17 9-4 6-10 0-17Z" fill="#FFE2A5"/>
+    <path d="M395 258h10v24h-10z" fill="#FFF0D8"/>
+    <path d="m396 264 8 5m-8 3 8 5" stroke="#D8778A" stroke-width="2"/>
+    <path d="M351 294q0-11 11-11h76q11 0 11 11v13q0 8-7 8t-7-8v-2q0-5-5-5t-5 5v12q0 8-7 8t-7-8v-9q0-5-5-5t-5 5q0 8-7 8t-7-8v-3q0-5-5-5t-5 5v7q0 8-7 8t-7-8v-7q0-5-5-5t-7 5Z" fill="#FFE2D5"/>
+    <path d="M353 344h94" stroke="#F6BEBD" stroke-width="7"/>
+    <path d="M342 366h116" stroke="#F8C4C3" stroke-width="4"/>
+    <path d="m363 330 4 3m22 1 3-4m24 6 4-3m18-2 3 4" stroke="#FFE4C7" stroke-width="3"/>
+  </g>
+</svg>

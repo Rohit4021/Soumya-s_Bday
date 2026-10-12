@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Two purple shooting stars</title>
+  <desc id="desc">Two glowing violet stars with long fading tails, drifting diagonally down and left on a transparent background.</desc>
+  <defs>
+    <linearGradient id="trail" x1="0" y1="0" x2="290" y2="-150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff4ff"/>
+      <stop offset=".15" stop-color="#d1a3ff" stop-opacity=".9"/>
+      <stop offset=".5" stop-color="#8c4bff" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#703cff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#f6dbff" stop-opacity=".9"/>
+      <stop offset=".24" stop-color="#b56aff" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#8137ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <g id="star">
+      <path d="M0 0 Q95 -70 290 -150 Q135 -49 0 0Z" fill="url(#trail)" filter="url(#glow)"/>
+      <path d="M0 0 Q95 -64 290 -150 Q130 -53 0 0Z" fill="url(#trail)"/>
+      <path d="M0 0 Q120 -67 290 -150" stroke="url(#trail)" stroke-width="2"/>
+      <circle r="32" fill="url(#halo)"/>
+      <path d="M0 -23 L4 -4 L23 0 L4 4 L0 23 L-4 4 L-23 0 L-4 -4Z" fill="#c386ff" filter="url(#glow)"/>
+      <path d="M0 -18 L2.8 -2.8 L18 0 L2.8 2.8 L0 18 L-2.8 2.8 L-18 0 L-2.8 -2.8Z" fill="#fff5ff"/>
+      <circle r="3" fill="white"/>
+    </g>
+  </defs>
+  <style>
+    .flight { animation: glide 3.8s ease-in-out infinite; }
+    .second { animation-delay: -1.6s; animation-duration: 4.6s; }
+    @keyframes glide {
+      0%, 100% { transform: translate(55px, -28px); opacity: .15; }
+      25% { opacity: 1; }
+      75% { opacity: .85; }
+      95% { transform: translate(-65px, 34px); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { .flight { animation: none; } }
+  </style>
+  <g transform="translate(270 250)"><g class="flight"><use href="#star"/></g></g>
+  <g transform="translate(530 425)"><g class="flight second"><g transform="scale(.72)"><use href="#star"/></g></g></g>
+</svg>
