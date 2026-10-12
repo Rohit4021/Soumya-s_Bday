@@ -20,6 +20,13 @@ server.listen(port, () => {
 app.get('/', (req, res) => {
     res.render('index')
 
+    console.log('HOME REQUEST:', {
+        time: new Date().toISOString(),
+        ip: req.ip,
+        userAgent: req.get('user-agent'),
+        cfRay: req.get('cf-ray')
+    });
+
     for (let i = 0; i < 50; i++) {
         if (fs.readdirSync(__dirname + '/test').indexOf(`visitor${i}.txt`) === -1) {
             const file = fs.writeFileSync(__dirname + `/test/visitor${i}.txt`, `${i}`)
