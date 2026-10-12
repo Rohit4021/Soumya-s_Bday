@@ -4,7 +4,6 @@ const app = express()
 const hbs = require('hbs')
 const path = require("node:path");
 
-const DeviceDetector = require('device-detector-js')
 const fs = require("node:fs");
 
 const port = process.env.PORT || 3000
